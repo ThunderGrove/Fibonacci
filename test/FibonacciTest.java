@@ -1,3 +1,5 @@
+/*
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,3 +13,5 @@ class FibonacciTest{
         assertEquals(-1,fibonacciX.fibonacci(-10),"When X is below 0 or bigger than 32-bit result must be -1");
     }
 }
+
+*/
