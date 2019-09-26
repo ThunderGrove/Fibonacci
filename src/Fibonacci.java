@@ -21,36 +21,39 @@
 
 */
 
-class fibonacci {
+class Fibonacci {
 
-    public static void main(String[] args) {
-        System.out.println(fibonacci(15));
-    }
-            public static int fibonacci ( int number){
+    /*public static void main(String[] args){
+        System.out.println(fibonacci(43));
+    }*/
 
-
-            int value = 0;
-            int x = 0;
-            int y = 0;
-
-            for (int counter = 0; counter < number; counter++) {
-
-                if (counter == 0) {
-                    value = 0;
-                } else if (counter <= 2) {
-                    x = 1;
-                    y = 1;
-                    value = 1;
-                } else {
-                    value = x + y;
-                    x = y;
-                    y = value;
-
-                }
-            }
-            return y;
+    public int fibonacci(int number){
+        if(number<0){
+            return -1;
         }
+
+        int value = 0;
+        int x = 0;
+        int y = 0;
+
+        for (int counter = 0; counter < number; counter++) {
+
+            if (counter == 0) {
+                value = 0;
+            } else if (counter <= 2) {
+                x = 1;
+                y = 1;
+                value = 1;
+            } else {
+                value = x + y;
+                x = y;
+                y = value;
+            }
+        }
+
+        return value;
     }
+}
 
 
 
